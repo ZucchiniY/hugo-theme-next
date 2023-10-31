@@ -22,7 +22,7 @@
   <span class="with-love">
     <i class="{{ $ft.icon.name }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ $ft.copyright | default .Site.Params.author }}</span>
+  <span class="author" itemprop="copyrightHolder">{{ $ft.copyright | default .Site.Params.author.name }}</span>
 </div>
 {{ if $ft.powered }}
 <div class="powered-by">

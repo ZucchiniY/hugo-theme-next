@@ -4,10 +4,10 @@
     <link itemprop="mainEntityOfPage" href="{{ .Permalink }}">
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="{{ .Site.Params.avatar.url }}">
-      <meta itemprop="name" content="{{ .Params.author | default .Site.Params.author }}">
+      <meta itemprop="name" content="{{ .Params.author | default .Site.Params.author.name }}">
     </span>
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="{{ .Site.Params.author }}">
+      <meta itemprop="name" content="{{ .Site.Params.author.name }}">
       <meta itemprop="description" content="{{ .Site.Params.description }}">
     </span>
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">

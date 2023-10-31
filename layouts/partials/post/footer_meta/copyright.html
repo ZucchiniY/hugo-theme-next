@@ -12,7 +12,7 @@
         {{ .Params.Author }}
       {{ else }}
         <strong>{{ print (T "PostCopyRight.author") (T "Symbol.colon") }} </strong>
-        {{ .Site.Params.author }}
+        {{ .Site.Params.author.name }}
       {{ end }}
     </li>
     <li class="post-copyright-link">

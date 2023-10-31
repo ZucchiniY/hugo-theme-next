@@ -10,7 +10,7 @@
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:locale" content="{{ .Site.LanguageCode }}"/>
 {{ if .IsPage }}
-<meta property="article:author" content="{{ .Params.Author | default .Site.Params.Author }}" />
+<meta property="article:author" content="{{ .Params.Author | default .Site.Params.Author.name }}" />
 <meta property="article:published_time" content="{{ .Date }}" />
 <meta property="article:modified_time" content="{{ .Lastmod }}" />
 {{ end }}  

@@ -4,7 +4,7 @@
     <img class="site-author-image" itemprop="image" alt="{{ $author }}"
     src="/imgs/img-lazy-loading.gif" data-src="{{ . }}">
   {{ end }}
-  <p class="site-author-name" itemprop="name">{{ $author }}</p>
+  <p class="site-author-name" itemprop="name">{{ $author.name }}</p>
   <div class="site-description" itemprop="description">{{ .Site.Params.description }}</div>
 </div>
 
